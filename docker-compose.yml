@@ -98,8 +98,8 @@ services:
       - grafana_data:/var/lib/grafana
       - ./grafana/provisioning/:/etc/grafana/provisioning/
     configs:
-      - source: /usr/share/grafana
-        target: /opt/new/prometheus/grafana
+      - source: /usr/share/grafana/conf
+        target: /opt/testing
     
     env_file:
       - ./grafana/config.monitoring
